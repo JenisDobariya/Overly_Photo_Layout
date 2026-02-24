@@ -101,7 +101,7 @@ Return as a JSON array of objects.`,
   return JSON.parse(response.text || "[]");
 }
 
-export async function generateImage(layoutDescription: string, brandData: any, photoSize: string = "1440x700", hasLogo: boolean = false, eventTitle: string = "") {
+export async function generateImage(layoutDescription: string, brandData: any, photoSize: string = "1900x1200", hasLogo: boolean = false, eventTitle: string = "") {
   const prompt = `Generate an event photo booth frame layout.
 
 CRITICAL LAYOUT RULES:
